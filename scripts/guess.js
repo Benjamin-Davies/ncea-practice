@@ -15,7 +15,7 @@
       result.innerText = 
         `${
           correct ? 'Correct' : 'Wrong'
-        }! This poem was written by a ${answer}.`;
+        }! This poem was written by ${author}.`;
     else
       result.innerText =
         'Please make a guess...';
