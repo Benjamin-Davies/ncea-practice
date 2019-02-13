@@ -1,6 +1,20 @@
 body {
-  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2rem;
   margin: 0;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  font-family: 'Fahkwang', sans-serif;
 }
 
 .brand {
@@ -22,13 +36,8 @@ body {
   text-align: center;
 }
 
-header, nav {
-  font-size: 1.2rem;
-}
-
 nav {
   background: #658EF3;
-  border: 1px solid #658EF3;
 }
 
 nav ul {
@@ -83,6 +92,10 @@ button:focus {
   box-shadow: 0 3px 7px #333;
 }
 
+main {
+  flex-grow: 1;
+}
+
 .poem-list {
   list-style: none;
   font-size: 1.5rem;
@@ -90,7 +103,9 @@ button:focus {
   text-transform: capitalize;
 }
 
-.poem {
+.poem p {
+  border-left: 5px solid #658EF3;
+  padding-left: 1rem;
   font-size: 1.5rem;
 }
 
