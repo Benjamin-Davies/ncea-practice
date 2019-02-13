@@ -1,0 +1,127 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.brand {
+  color: #0047F1;
+  font-weight: bold;
+}
+
+.warn {
+  outline: 2px solid red;
+}
+
+.margins {
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 1024px;
+}
+
+.center {
+  text-align: center;
+}
+
+header, nav {
+  font-size: 1.2rem;
+}
+
+nav {
+  background: #658EF3;
+  border: 1px solid #658EF3;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0.2rem;
+}
+
+nav li {
+  display: inline-block;
+  border-radius: 0.3rem;
+  margin: 0 0.5rem;
+  padding: 0.3rem 0.5rem;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+nav li:hover {
+  background: white;
+  box-shadow: 0 3px 5px #333;
+}
+
+nav a {
+  color: #FFFEF3;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+nav li:hover a {
+  color: black;
+}
+
+nav a:focus {
+  outline-color: #EEE;
+}
+
+button {
+  display: block;
+  border: none;
+  border-radius: 0.2rem;
+  background: #658DF3;
+  color: white;
+  font-size: inherit;
+  margin: 1rem 0;
+  box-shadow: 0 2px 5px #333;
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s
+}
+
+button:hover,
+button:focus {
+  background: white;
+  color: black;
+  outline: none;
+  box-shadow: 0 3px 7px #333;
+}
+
+.poem-list {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-transform: capitalize;
+}
+
+.poem {
+  font-size: 1.5rem;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-container article {
+  flex-grow: 1;
+}
+
+aside {
+  border: #FFC857 solid 3px;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 1rem;
+  box-shadow: 0 5px 11px #AAA;
+}
+
+@media (min-width: 1024px) {
+  .aside-container {
+    flex-direction: row;
+  }
+
+  aside {
+    width: 300px;
+  }
+
+  .guess label {
+    display: block;
+  }
+}
