@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="vieport" content="witdth=device-width, initial-scale=1.0">
+
+  <title>CyPoem</title>
+
+  <link href="../styles/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="margins center">
+      <h1 class="brand">CyPoem</h1>
+      <p>A collection of poems with human and robotic origin.</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="center">
+      <ul>
+        <li><a href="../index.html#">Home</a></li>
+        <li><a href="../index.html#poems">Poems</a></li>
+        <li><a href="../sources.html">Sources</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="margins aside-container">
+    <article class="poem">
+      <p>
+        Roses are red<br>
+        Violets are blue<br>
+        I can't think of a poem<br>
+        And neither can you
+      </p>
+    </article>
+
+    <aside class="guess">
+      <form id="guess-form">
+        <h3>Guess the source</h3>
+        <noscript>
+          <h5 class="warn">This interactive element requires javascript.</h5>
+          <p>The answer is "Human".</p>
+        </noscript>
+        <label>
+          <input type="radio" name="guess" value="human">
+          Human
+        </label>
+        <label>
+          <input type="radio" name="guess" value="computer">
+          Computer
+        </label>
+        <button type="submit">Guess</button>
+      </form>
+      <p id="result"></p>
+      <script>var answer = 'human';</script>
+      <script src="../scripts/guess.js"></script>
+    </aside>
+  </div>
+
+</body>
+
+</html>
