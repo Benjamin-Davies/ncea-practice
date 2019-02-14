@@ -118,6 +118,22 @@ main {
   flex-grow: 1;
 }
 
+footer {
+  font-size: 0.9rem;
+  background: #658DF3;
+  color: #DDD;
+  border-bottom: 1rem solid #2F67F3;
+}
+
+footer a {
+  color: #9FB8F6;
+}
+
+footer .margins {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 aside {
   border: #FFC857 solid 3px;
   border-radius: 1rem;
