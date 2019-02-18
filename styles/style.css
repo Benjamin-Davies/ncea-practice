@@ -36,6 +36,15 @@ nav {
   text-align: center;
 }
 
+header {
+  background: url("../assets/header.jpg"),
+    radial-gradient(#FFAB00, #FFC857);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0 25px #FFFBF3;
+}
+
 nav {
   background: #658EF3;
 }
