@@ -43,6 +43,25 @@ header {
   background-size: cover;
   background-position: center;
   text-shadow: 0 0 25px #FFFBF3;
+  overflow: hidden;
+}
+
+header h1 {
+  animation: fly-from-left 0.5s ease-out;
+}
+
+header p {
+  animation: fly-from-right 0.5s ease-out;
+}
+
+@keyframes fly-from-left {
+  0% { transform: translateX(-50vw); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes fly-from-right {
+  0% { transform: translateX(50vw); }
+  100% { transform: translateX(0); }
 }
 
 nav {
@@ -52,6 +71,7 @@ nav {
 nav ul {
   list-style: none;
   margin: 0.2rem;
+  perspective: 50rem;
 }
 
 nav li {
@@ -60,6 +80,14 @@ nav li {
   margin: 0 0.5rem;
   padding: 0.3rem 0.5rem;
   transition: box-shadow 0.2s, background 0.2s;
+  animation: flip-up 1s ease-out;
+  transform-origin: bottom;
+}
+
+@keyframes flip-up {
+  0% { transform: rotateX(90deg); }
+  40% { transform: rotateX(90deg); }
+  100% { transform: rotateX(0); }
 }
 
 nav li:hover {
