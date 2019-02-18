@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="vieport" content="witdth=device-width, initial-scale=1.0">
+
+  <title>CyPoem</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Fahkwang|Abel" rel="stylesheet">
+  <link href="../styles/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="margins center">
+      <h1 class="brand">CyPoem</h1>
+      <p>A collection of poems with human and robotic origin.</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="center">
+      <ul>
+        <li><a href="../index.html#">Home</a></li>
+        <li><a href="../index.html#poems">Poems</a></li>
+        <li><a href="../sources.html">Sources</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="margins aside-container">
+    <article class="poem">
+      <h1>The Big And Flat Hat</h1>
+      <p>
+        Whose hat is that? I think I know.<br>
+        Its owner is quite sad though.<br>
+        It really is a tale of woe,<br>
+        I watch him frown. I cry hello.
+      </p>
+      <p>
+        He gives his hat a shake,<br>
+        And sobs until the tears make.<br>
+        The only other sound's the break,<br>
+        Of distant waves and birds awake.
+      </p>
+      <p>
+        The hat is big, flat and deep,<br>
+        But he has promises to keep,<br>
+        Until then he shall not sleep.<br>
+        He lies in bed with ducts that weep.
+      </p>
+      <p>
+        He rises from his bitter bed,<br>
+        With thoughts of sadness in his head,<br>
+        He idolises being dead.<br>
+        Facing the day with never ending dread.
+      </p>
+    </article>
+
+    <aside class="guess">
+      <form id="guess-form">
+        <h3>Guess the source</h3>
+        <noscript>
+          <h5 class="warn">This interactive element requires javascript.</h5>
+          <p>The answer is "Human".</p>
+        </noscript>
+        <label>
+          <input type="radio" name="guess" value="human">
+          Human
+        </label>
+        <label>
+          <input type="radio" name="guess" value="computer">
+          Computer
+        </label>
+        <button type="submit">Guess</button>
+      </form>
+      <p id="result"></p>
+      <script>
+        var answer = 'computer',
+          author = 'Quick Poem Generator';
+      </script>
+      <script src="../scripts/guess.js"></script>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="margins center">
+      <p>Website by Benjamin Davies.</p>
+      <p>
+        For poem authors, see poem page or
+        <a href="../sources.html">Sources</a>.
+        <br>
+        To contact me, see
+        <a href="../contact.html">Contact</a>.
+        <br>
+        Please report bugs on
+        <a href="https://github.com/Benjamin-Davies/ncea-practice/issues">GitHub</a>.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
